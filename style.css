@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Pattaya&display=swap');
+
+:root {
+    --bg--background: #0e1217;
+    --bg--primary: #E4E6EB;
+    --bg--secondary: #B0B3B8;
+    --bg--tertiary: #a8b3cf;
+    --bg--light1: rgba(255, 255, 255, 0.829);
+    --bg--light2: rgba(255, 255, 255, 0.342);
+    /* --bg--primary: #451369;
+    --bg--secondary: rgba(136, 25, 25, 0.938);
+    --bg--dark: black;
+    --bg--light1: rgba(255, 255, 255, 0.801);
+    --bg--light2: black;
+    --bg--tertiary: #004b91; // #0c7ec0 */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #0e1217;
+    /* #01050c, #1D222C , 0e1217 */
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+
+.main-section {
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.main-section h1 {
+    font-size: 50px;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 0.3em;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    color: var(--bg--primary);
+}
+
+.explore-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+.hotel-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: black;
+    background-color: var(--bg--tertiary);
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+.hotel-button:hover {
+    animation-duration: 2s;
+    animation-name: button;
+}
+
+@keyframes button {
+    0% {
+        background-color: var(--bg--tertiary);
+
+    }
+
+    25% {
+        right: 10px;
+        background-color: #d16464;
+
+    }
+
+    75% {
+        left: 10px;
+    }
+
+
+    100% {
+        background-color: #ff5d5d;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.hotel-button p {
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+    padding-right: 2.2em;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+}
+
+.hotel-button img {
+    margin: auto;
+    padding: auto;
+}
+
+
+.main-image {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+.main-image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.main-image2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-image1 {
+    height: 450px;
+    width: 60%;
+    margin: 0;
+    padding: 10px;
+}
+
+#main-image2 {
+    width: 350px;
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+
+#main-image1,
+#main-image2,
+    {
+    margin: 0;
+    padding: 0;
+
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+#main-image2 {
+    padding-top: 10px;
+}
+
+.image1 {
+    margin-bottom: 10px;
+}
+
+#main-image1 img {
+    height: 100%;
+}
+
+#main-image2 img {
+    height: 222px;
+    width: 125%;
+
+}
+
+#main2 {
+    display: flex;
+}
+
+.main-para {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.main-para h3 {
+    font-size: 28px;
+    color: var(--bg--primary);
+
+}
+
+.main-para p {
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    color: var(--bg--secondary);
+}
+
+.main2-img {
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.main2-img h2 {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 20px;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+
+}
+
+.main2-img p {
+    font-size: 18px;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+}
+
+#main2-para {
+    background-color: #ff5d5d;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    padding: 8px;
+    padding-left: 20px;
+}
+
+.main2-img button {
+    font-size: 1.8em;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(23, 27, 27);
+    color: white;
+    padding: 10px;
+
+}
+
+.main2-img button p {
+    margin: 0;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    padding: 0;
+}
+
+.main2-img img {
+    width: 450px;
+    height: 250px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+/*destinations*/
+
+
+
+#destinations h3 {
+    font-size: 30px;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    color: var(--bg--primary);
+
+}
+
+.desti-container {
+    display: flex;
+
+}
+
+.desti-img {
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    color: var(--bg--secondary);
+
+}
+
+.desti-img img {
+    width: 95%;
+    height: 85%;
+}
+
+
+/* Essential Hawaii */
+
+
+.Essential-Hawaii h3 {
+    font-size: 30px;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    color: var(--bg--primary);
+
+}
+
+.sub-heading {
+    font-size: 15px;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    color: var(--bg--light2);
+}
+
+.do {
+    display: flex;
+
+}
+
+.essen-hawa {
+    width: 25%;
+    display: flex;
+    font-size: 17px;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    flex-direction: column;
+    text-align: center;
+    color: var(--bg--secondary);
+
+}
+
+.essen-hawa img {
+    width: 95%;
+    margin: 10px;
+}
+
+
+
+/*whats-happennig*/
+
+.whats-heading {
+    margin-left: 10%;
+    font-size: 30px;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    color: var(--bg--primary);
+
+}
+
+.whats-intel {
+    color: var(--bg--secondary)
+}
+
+#whats-happennig {
+    background-color: var(--bg--seon);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.whats-container {
+    display: flex;
+}
+
+
+.whats-img-container {
+    display: flex;
+    width: 100%;
+    height: 390px;
+    background-color: var(--bg--primary);
+    ;
+}
+
+.whats-img-container h3 {
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.whats-img-container p {
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+    color: var(--bg--primary);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(70, 60, 60);
+}
+
+.whats-img {
+    width: 33%;
+}
+
+
+.whats-img-container img {
+    width: 97%;
+    height: 55%;
+
+}
+
+#whats-happennig h2 {
+    font-size: 25px;
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    margin-left: 10px;
+}
+
+
+/* footer */
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-text {
+    background-color: black;
+    margin: 0;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p {
+    font-family: 'El Messiri',
+        sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
+
+/* preloader */
+
+.preloader {
+    background: #1c2130 url(photos/loader2.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+#scrollToTopBtn {
+    background-color: tomato;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+h1:hover,
+h2:hover,
+h3:hover {
+    -webkit-animation: text 1.5s;
+    animation: text 1.5s;
+}
+
+@-webkit-keyframes text {
+    0% {
+        opacity: .4;
+        text-transform: uppercase;
+    }
+
+    100% {
+        text-transform: uppercase;
+        opacity: 1;
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: .4;
+        text-transform: uppercase;
+    }
+
+    100% {
+        text-transform: uppercase;
+
+        opacity: 1;
+    }
+}
+
+
+/* flashing */
+img:hover {
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
